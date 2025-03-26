@@ -2,7 +2,7 @@ from flask import Flask, request, url_for
 
 app = Flask(__name__)
 
-@app.route('/load_photo')
+@app.route('/carousel')
 def sample_file_upload():
     return f'''<!doctype html>
                     <html lang="en">
@@ -11,7 +11,7 @@ def sample_file_upload():
                         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
                         <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/style.css')}" />
-                        <title>Отбор астронавтов</title>
+                        <title>Пейзажи Марса</title>
                       </head>
                       <body>
                         <h1>Пейзажи Марса</h1>
